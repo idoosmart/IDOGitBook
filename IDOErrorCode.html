@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>升级管理库 · IDO智能手环SDK</title>
+        <title>错误码说明 · IDO智能手环SDK</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -77,10 +77,10 @@
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="IDODeviceBinding.html" />
+    <link rel="next" href="IDOSetUpFunction.html" />
     
     
-    <link rel="prev" href="IDOBluetooth.html" />
+    <link rel="prev" href="IDODeviceBinding.html" />
     
 
     </head>
@@ -135,7 +135,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3" data-path="IDOBlueUpdate.html">
+        <li class="chapter " data-level="1.3" data-path="IDOBlueUpdate.html">
             
                 <a href="IDOBlueUpdate.html">
             
@@ -161,7 +161,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.5" data-path="IDOErrorCode.html">
+        <li class="chapter active" data-level="1.5" data-path="IDOErrorCode.html">
             
                 <a href="IDOErrorCode.html">
             
@@ -678,7 +678,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >升级管理库</a>
+        <a href="." >错误码说明</a>
     </h1>
 </div>
 
@@ -693,153 +693,205 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="&#x84DD;&#x7259;&#x5347;&#x7EA7;&#x5E93;">&#x84DD;&#x7259;&#x5347;&#x7EA7;&#x5E93;</h1>
-<h2 id="31&#x529F;&#x80FD;&#x6982;&#x8FF0;">3.1&#x529F;&#x80FD;&#x6982;&#x8FF0;</h2>
-<p>SDK&#x5347;&#x7EA7;&#x529F;&#x80FD;&#x53EA;&#x8D1F;&#x8D23;&#x56FA;&#x4EF6;&#x5347;&#x7EA7;&#x3002;&#x4E0D;&#x5904;&#x7406;&#x56FA;&#x4EF6;&#x7248;&#x672C;&#x786E;&#x5B9A;&#x548C;&#x56FA;&#x4EF6;&#x4E0B;&#x8F7D;&#x3002;&#x6CE8;&#x610F;&#x56FA;&#x4EF6;&#x4E0B;&#x8F7D;&#x7684;&#x5B8C;&#x6574;&#x6027;&#xFF0C;&#x5728;&#x5347;&#x7EA7;&#x671F;&#x95F4;&#x4F20;&#x5165;&#x56FA;&#x4EF6;&#x672C;&#x5730;&#x6C99;&#x7BB1;&#x8DEF;&#x5F84;&#xFF0C;&#x76D1;&#x89C6;&#x5347;&#x7EA7;&#x8FDB;&#x5EA6;&#x548C;&#x5B8C;&#x6210;&#x72B6;&#x6001;&#xFF0C;&#x4EE5;&#x53CA;&#x9519;&#x8BEF;&#x4EE3;&#x7406;&#x56DE;&#x8C03;&#x3002;&#x5347;&#x7EA7;&#x5E93;&#x7684;&#x5F53;&#x524D;&#x7248;&#x672C;&#x6DFB;&#x52A0;&#x4E86;nordic&#x3001;realtk&#x3001;apollo&#x5E73;&#x53F0;&#x3002;&#x5347;&#x7EA7;&#x7BA1;&#x7406;&#x5E93;&#xFF08;IDOBlueUpdate&#xFF09;&#x662F;&#x4F9D;&#x8D56;&#x84DD;&#x7259;&#x534F;&#x8BAE;&#x5E93;&#xFF08;IDOBlueProtocol&#xFF09;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x4F7F;&#x7528;&#x5347;&#x7EA7;&#x7BA1;&#x7406;&#x5E93;&#x524D;&#xFF0C;&#x5148;&#x5BFC;&#x5165;&#x84DD;&#x7259;&#x534F;&#x8BAE;&#x5E93;&#x3002;</p>
-<h3 id="32&#x5347;&#x7EA7;&#x521D;&#x59CB;&#x5316;">3.2&#x5347;&#x7EA7;&#x521D;&#x59CB;&#x5316;</h3>
-<p>Objc:</p>
-<pre><code class="lang-objc">[IDOUpdateFirmwareManager shareInstance].delegate = <span class="hljs-keyword">self</span>;
-[IDOUpdateFirmwareManager shareInstance].updateType = IDO_NORDIC_PLATFORM_TYPE;
-</code></pre>
-<p>Swift:</p>
-<pre><code class="lang-swift"><span class="hljs-type">IDOUpdateFirmwareManager</span>.shareInstance().delegate = <span class="hljs-keyword">self</span>;
-<span class="hljs-type">IDOUpdateFirmwareManager</span>.shareInstance().updateType = <span class="hljs-type">IDO_UPDATE_PLATFORM_TYPE</span>.<span class="hljs-type">NORDIC_PLATFORM_TYPE</span>;
-</code></pre>
-<h3 id="33&#x53C2;&#x6570;&#x8BF4;&#x660E;">3.3&#x53C2;&#x6570;&#x8BF4;&#x660E;</h3>
+                                <h1 id="&#x9519;&#x8BEF;&#x7801;&#x8BF4;&#x660E;">&#x9519;&#x8BEF;&#x7801;&#x8BF4;&#x660E;</h1>
+<h2 id="51&#x529F;&#x80FD;&#x6982;&#x8FF0;">5.1&#x529F;&#x80FD;&#x6982;&#x8FF0;</h2>
+<p>errorCode&#x9519;&#x8BEF;&#x7801;&#x662F;&#x5168;&#x5C40;&#x547D;&#x4EE4;&#x56DE;&#x8C03;&#x7684;&#x5224;&#x65AD;&#x72B6;&#x6001;&#x4F9D;&#x636E;&#xFF0C;&#x5F53;errorCode&#x7B49;&#x4E8E;0&#x4E3A;&#x6210;&#x529F;&#xFF0C;&#x5176;&#x4ED6;&#x503C;&#x4E3A;&#x5931;&#x8D25;&#x3002;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;IDOErrorCodeToStr&#x7C7B;&#x4E2D;&#x7684;&#x65B9;&#x6CD5;&#x83B7;&#x53D6;&#x9519;&#x8BEF;&#x7801;&#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x8BF4;&#x660E;&#x6587;&#x6863;&#x5BF9;&#x5E94;code&#x7684;&#x89E3;&#x91CA;&#x3002;</p>
+<h3 id="52&#x5BF9;&#x5E94;&#x9519;&#x8BEF;&#x7801;&#x8868;">5.2&#x5BF9;&#x5E94;&#x9519;&#x8BEF;&#x7801;&#x8868;</h3>
 <table border="1px" width="100%">
 <thead>
 <tr>
-<th><strong>&#x53C2;&#x6570;</strong></th>
-<th><strong>&#x8BF4;&#x660E;</strong></th>
+<th><strong>&#x9519;&#x8BEF;&#x7801;</strong></th>
+<th><strong>&#x5B57;&#x7B26;&#x4E32;</strong></th>
 <th><strong>&#x5907;&#x6CE8;</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>packagePath</td>
-<td>&#x56FA;&#x4EF6;&#x5305;&#x672C;&#x5730;&#x8DEF;&#x5F84;</td>
-<td>&#x672C;&#x5730;&#x6C99;&#x76D2;&#x8DEF;&#x5F84;</td>
+<td>0</td>
+<td>SUCCESS</td>
+<td>&#x6210;&#x529F;</td>
 </tr>
 <tr>
-<td>errorCode</td>
-<td>&#x5347;&#x7EA7;&#x9519;&#x8BEF;&#x7801;</td>
-<td>readonly</td>
+<td>4</td>
+<td>ERROR_NO_MEM</td>
+<td>&#x672A;&#x77E5;</td>
 </tr>
 <tr>
-<td>state</td>
-<td>&#x5347;&#x7EA7;&#x72B6;&#x6001;</td>
-<td>readonly</td>
+<td>5</td>
+<td>ERROR_NOT_FIND</td>
+<td>&#x672A;&#x627E;&#x5230;&#x65B9;&#x6CD5;</td>
 </tr>
 <tr>
-<td>updateType</td>
-<td>&#x5347;&#x7EA7;&#x5E73;&#x53F0;&#x7C7B;&#x578B;</td>
-<td>&#x652F;&#x6301;nordic&#x3001;realtk&#x3001;apollo</td>
+<td>6</td>
+<td>ERROR_NOT_SUPPORTED</td>
+<td>&#x4E0D;&#x652F;&#x6301;&#x6B64;&#x529F;&#x80FD;</td>
+</tr>
+<tr>
+<td>7</td>
+<td>ERROR_INVALID_PARAM</td>
+<td>&#x65E0;&#x6548;&#x53C2;&#x6570;</td>
+</tr>
+<tr>
+<td>8</td>
+<td>ERROR_INVALID_STATE</td>
+<td>&#x65E0;&#x6548;&#x72B6;&#x6001;</td>
+</tr>
+<tr>
+<td>9</td>
+<td>ERROR_INVALID_LENGTH</td>
+<td>&#x65E0;&#x6548;&#x6570;&#x636E;&#x957F;&#x5EA6;</td>
+</tr>
+<tr>
+<td>10</td>
+<td>ERROR_INVALID_FLAGS</td>
+<td>&#x672A;&#x77E5;</td>
+</tr>
+<tr>
+<td>11</td>
+<td>ERROR_INVALID_DATA</td>
+<td>&#x65E0;&#x6548;&#x6570;&#x636E;</td>
+</tr>
+<tr>
+<td>12</td>
+<td>ERROR_DATA_SIZE</td>
+<td>&#x9519;&#x8BEF;&#x6570;&#x636E;&#x5927;&#x5C0F;</td>
+</tr>
+<tr>
+<td>13</td>
+<td>ERROR_TIMEOUT</td>
+<td>&#x8D85;&#x65F6;</td>
+</tr>
+<tr>
+<td>14</td>
+<td>ERROR_NULL</td>
+<td>&#x7A7A;&#x6570;&#x636E;</td>
+</tr>
+<tr>
+<td>15</td>
+<td>ERROR_FORBIDDEN</td>
+<td>&#x7981;&#x6B62;&#x9519;&#x8BEF;</td>
+</tr>
+<tr>
+<td>17</td>
+<td>ERROR_BUSY</td>
+<td>&#x672A;&#x77E5;</td>
+</tr>
+<tr>
+<td>18</td>
+<td>ERROR_LOW_BATT</td>
+<td>&#x7535;&#x91CF;&#x8FC7;&#x4F4E;</td>
+</tr>
+<tr>
+<td>19</td>
+<td>ERROR_BLUETOOTH_DISCONNECT</td>
+<td>&#x84DD;&#x7259;&#x65AD;&#x7EBF;</td>
+</tr>
+<tr>
+<td>20</td>
+<td>ERROR_MODEL_DATA</td>
+<td>&#x6A21;&#x578B;&#x6570;&#x636E;&#x9519;&#x8BEF;</td>
+</tr>
+<tr>
+<td>21</td>
+<td>ERROR_CURRENT_OTA</td>
+<td>&#x5F53;&#x524D;OTA</td>
+</tr>
+<tr>
+<td>22</td>
+<td>ERROR_DEVICE_SYNCING</td>
+<td>&#x540C;&#x6B65;&#x4E2D;</td>
+</tr>
+<tr>
+<td>23</td>
+<td>ERROR_AUTH_CODE</td>
+<td>&#x9519;&#x8BEF;&#x6388;&#x6743;&#x7801;</td>
+</tr>
+<tr>
+<td>24</td>
+<td>ERROR_SET_PAIRING_CANCEL</td>
+<td>&#x53D6;&#x6D88;&#x914D;&#x5BF9;</td>
+</tr>
+<tr>
+<td>25</td>
+<td>ERROR_SET_PAIRING_UNKNOWN_TIMEOUT</td>
+<td>&#x914D;&#x5BF9;&#x672A;&#x77E5;&#x8D85;&#x65F6;</td>
+</tr>
+<tr>
+<td>26</td>
+<td>ERROR_SET_PAIRING_RECONNECT</td>
+<td>&#x914D;&#x5BF9;&#x91CD;&#x8FDE;&#x5931;&#x8D25;</td>
+</tr>
+<tr>
+<td>27</td>
+<td>ERROR_SET_OTA_RECONNECT</td>
+<td>OTA&#x91CD;&#x8FDE;&#x5931;&#x8D25;</td>
+</tr>
+<tr>
+<td>28</td>
+<td>ERROR_TRAN_FILE_NO_EXIST</td>
+<td>&#x4F20;&#x8F93;&#x6587;&#x4EF6;&#x4E0D;&#x5B58;&#x5728;<br>&#x4F20;&#x8F93;&#x6587;&#x4EF6;&#x8DEF;&#x5F84;&#x9519;&#x8BEF;</td>
+</tr>
+<tr>
+<td>29</td>
+<td>ERROR_TRAN_FILE_FAILED</td>
+<td>&#x4F20;&#x8F93;&#x6587;&#x4EF6;&#x5931;&#x8D25;</td>
+</tr>
+<tr>
+<td>30</td>
+<td>ERROR_ALARM_ID</td>
+<td>&#x95F9;&#x949F;ID&#x9519;&#x8BEF;</td>
+</tr>
+<tr>
+<td>31</td>
+<td>ERROR_PAIRING_TIMEOUT</td>
+<td>&#x914D;&#x5BF9;&#x8D85;&#x65F6;</td>
+</tr>
+<tr>
+<td>32</td>
+<td>ERROR_FAST_CONFIG</td>
+<td>&#x5FEB;&#x901F;&#x914D;&#x9001;&#x9519;&#x8BEF;</td>
+</tr>
+<tr>
+<td>33</td>
+<td>ERROR_MIGRATION_ING</td>
+<td>&#x6570;&#x636E;&#x8FC1;&#x79FB;&#x4E2D;</td>
+</tr>
+<tr>
+<td>34</td>
+<td>ERROR_BLUE_PAIRING</td>
+<td>&#x84DD;&#x7259;&#x914D;&#x5BF9;&#x4E2D;</td>
+</tr>
+<tr>
+<td>35</td>
+<td>ERROR_DEVICE_NO_BIND</td>
+<td>&#x8BBE;&#x5907;&#x672A;&#x7ED1;&#x5B9A;</td>
+</tr>
+<tr>
+<td>36</td>
+<td>ERROR_TRAN_FILE_GPS_RUN</td>
+<td>GPS&#x8FD0;&#x884C;&#x4E2D;</td>
+</tr>
+<tr>
+<td>37</td>
+<td>ERROR_SYNC_ITEM_TYPE</td>
+<td>&#x9519;&#x8BEF;&#x540C;&#x6B65;&#x7C7B;&#x9879;</td>
+</tr>
+<tr>
+<td>38</td>
+<td>ERROR_TRAN_FILE_ING</td>
+<td>&#x4F20;&#x8F93;&#x6587;&#x4EF6;&#x4E2D;</td>
+</tr>
+<tr>
+<td>39</td>
+<td>ERROR_METHOD_DEPRECATED</td>
+<td>&#x65B9;&#x6CD5;&#x5F03;&#x7528;</td>
 </tr>
 </tbody>
 </table>
 
-<h3 id="34&#x57FA;&#x7840;&#x65B9;&#x6CD5;">3.4&#x57FA;&#x7840;&#x65B9;&#x6CD5;</h3>
-<p>Objc:</p>
-<pre><code class="lang-objc"><span class="hljs-comment">//&#x5F00;&#x59CB;&#x5347;&#x7EA7;</span>
-[IDOUpdateFirmwareManager startUpdate];
-</code></pre>
-<p>Swift:</p>
-<pre><code class="lang-swift"><span class="hljs-comment">//&#x5F00;&#x59CB;&#x5347;&#x7EA7;</span>
-<span class="hljs-type">IDOUpdateFirmwareManager</span>.startUpdate();
-</code></pre>
-<h3 id="35&#x4EE3;&#x7406;&#x65B9;&#x6CD5;">3.5&#x4EE3;&#x7406;&#x65B9;&#x6CD5;</h3>
-<p>Objc:</p>
-<pre><code class="lang-objc">&lt;IDOUpdateManagerDelegate&gt;
-- (<span class="hljs-built_in">NSString</span> *)currentPackagePathWithUpdateManager:(IDOUpdateFirmwareManager *)manager
-{
-   <span class="hljs-comment">// &#x56FA;&#x4EF6;&#x5305;&#x672C;&#x5730;&#x5B58;&#x653E;&#x8DEF;&#x5F84;</span>
-    <span class="hljs-keyword">return</span> filePath;
-}
 
-- (<span class="hljs-keyword">void</span>)updateManager:(IDOUpdateFirmwareManager *)manager
-                state:(IDO_UPDATE_STATE)state
-{
-    <span class="hljs-keyword">if</span> (state == IDO_UPDATE_CO<span class="hljs-built_in">MPLETED</span>) {
-        <span class="hljs-comment">//&#x5347;&#x7EA7;&#x5B8C;&#x6210;</span>
-    }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> state == IDO_UPDATE_DID_ENTER_OTA{
-        <span class="hljs-comment">//&#x8FDB;&#x5165;ota&#x6A21;&#x5F0F;</span>
-    }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> state == IDO_UPDATE_STARTING {
-        <span class="hljs-comment">//&#x5347;&#x7EA7;&#x4E2D;</span>
-    }
-}
-
-- (<span class="hljs-keyword">void</span>)updateManager:(IDOUpdateFirmwareManager *)manager updateError:(<span class="hljs-built_in">NSError</span> *)error
-{
-   <span class="hljs-comment">// &#x5347;&#x7EA7;&#x5931;&#x8D25;</span>
-}
-
-- (<span class="hljs-keyword">void</span>)updateManager:(IDOUpdateFirmwareManager *)manager
-             progress:(<span class="hljs-keyword">float</span>)progress
-              message:(<span class="hljs-built_in">NSString</span> *)message
-{
- <span class="hljs-comment">// &#x5347;&#x7EA7;&#x8FDB;&#x5EA6; (0-1)</span>
-}
-
-<span class="hljs-keyword">@optional</span>
-- (IDO_UPDATE_DFU_FIRMWARE_TYPE)selectDfuFirmwareTypeWithUpdateManager:(IDOUpdateFirmwareManager * _Nullable)manager
-{
-    <span class="hljs-comment">// &#x5347;&#x7EA7;nordic application&#x7C7B;&#x578B;</span>
-    <span class="hljs-keyword">return</span> IDO_DFU_FIRMWARE_APPLI<span class="hljs-built_in">CATION_TYPE</span>;
-    <span class="hljs-comment">// &#x5347;&#x7EA7;nordic bootloader&#x7C7B;&#x578B;</span>
-    <span class="hljs-keyword">return</span> IDO_DFU_FIRMWARE_BOOTLOADER_TYPE;
-}
-
-- (IDO_REALTK_UPDATE_TYPE)selectRealtkTypeWithUpdateManager(IDOUpdateFirmwareManager *_Nullable)manager
-                        supportOtaMode:(<span class="hljs-built_in">BOOL</span>)isOtaMode
-                     supportSilentMode:(<span class="hljs-built_in">BOOL</span>)isSilentMode
-{
-  <span class="hljs-comment">// &#x5347;&#x7EA7;realtk&#x4E3B;&#x63A7;&#x7A0B;&#x5E8F;</span>
-  <span class="hljs-keyword">return</span> IDO_NORMAL_MODE_UPDATE_TYPE;
-  <span class="hljs-comment">// &#x5347;&#x7EA7;realtk flash &#x6587;&#x4EF6;</span>
-  <span class="hljs-keyword">return</span> IDO_SILENT_MODE_UPDATE_TYPE;
-}
-</code></pre>
-<p>Swift:</p>
-<pre><code class="lang-swift"><span class="hljs-type">IDOUpdateManagerDelegate</span>
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">currentPackagePath</span><span class="hljs-params">(withUpdate manager: IDOUpdateFirmwareManager?)</span></span> -&gt; <span class="hljs-type">String</span>? {
-    <span class="hljs-comment">// &#x56FA;&#x4EF6;&#x5305;&#x672C;&#x5730;&#x5B58;&#x653E;&#x8DEF;&#x5F84;</span>
-    <span class="hljs-keyword">return</span> filePath;
-}
-
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">update</span><span class="hljs-params">(<span class="hljs-number">_</span> manager: IDOUpdateFirmwareManager?, progress: Float, message: String?)</span></span> {
-   <span class="hljs-comment">// &#x5347;&#x7EA7;&#x8FDB;&#x5EA6; (0-1)</span>
-}
-
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">update</span><span class="hljs-params">(<span class="hljs-number">_</span> manager: IDOUpdateFirmwareManager?, state: IDO_UPDATE_STATE)</span></span> {
-    <span class="hljs-keyword">if</span> state == <span class="hljs-type">IDO_UPDATE_STATE</span>.<span class="hljs-type">COMPLETED</span> {
-        <span class="hljs-comment">//&#x5347;&#x7EA7;&#x5B8C;&#x6210;</span>
-    }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> state == <span class="hljs-type">IDO_UPDATE_STATE</span>.<span class="hljs-type">DID_ENTER_OTA</span>{
-        <span class="hljs-comment">//&#x8FDB;&#x5165;ota&#x6A21;&#x5F0F;</span>
-    }<span class="hljs-keyword">else</span> <span class="hljs-keyword">if</span> state == <span class="hljs-type">IDO_UPDATE_STATE</span>.<span class="hljs-type">STARTING</span> {
-        <span class="hljs-comment">//&#x5347;&#x7EA7;&#x4E2D;</span>
-    }
-}
-
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">update</span><span class="hljs-params">(<span class="hljs-number">_</span> manager: IDOUpdateFirmwareManager?, updateError error: Error?)</span></span> {
-   <span class="hljs-comment">// &#x5347;&#x7EA7;&#x5931;&#x8D25;</span>
-}
-
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">selectDfuFirmwareType</span><span class="hljs-params">(withUpdate manager: IDOUpdateFirmwareManager?)</span></span> -&gt; <span class="hljs-type">IDO_UPDATE_DFU_FIRMWARE_TYPE</span> {
-    <span class="hljs-comment">// &#x5347;&#x7EA7;nordic application&#x7C7B;&#x578B;</span>
-    <span class="hljs-keyword">return</span> <span class="hljs-type">IDO_UPDATE_DFU_FIRMWARE_TYPE</span>.<span class="hljs-type">DFU_FIRMWARE_APPLICATION_TYPE</span>;
-    <span class="hljs-comment">// &#x5347;&#x7EA7;nordic bootloader&#x7C7B;&#x578B;</span>
-    <span class="hljs-keyword">return</span> <span class="hljs-type">IDO_UPDATE_DFU_FIRMWARE_TYPE</span>.<span class="hljs-type">DFU_FIRMWARE_BOOTLOADER_TYPE</span>;
-}
-
-<span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">selectRealtkType</span><span class="hljs-params">(withUpdate manager: IDOUpdateFirmwareManager?, supportOtaMode isOtaMode: Bool, supportSilentMode isSilentMode: Bool)</span></span> -&gt; <span class="hljs-type">IDO_REALTK_UPDATE_TYPE</span> {
-    <span class="hljs-comment">// &#x5347;&#x7EA7;realtk&#x4E3B;&#x63A7;&#x7A0B;&#x5E8F;</span>
-    <span class="hljs-keyword">return</span> <span class="hljs-type">IDO_REALTK_UPDATE_TYPE</span>.<span class="hljs-type">NORMAL_MODE_UPDATE_TYPE</span>;
-    <span class="hljs-comment">// &#x5347;&#x7EA7;realtk flash &#x6587;&#x4EF6;</span>
-    <span class="hljs-keyword">return</span> <span class="hljs-type">IDO_REALTK_UPDATE_TYPE</span>.<span class="hljs-type">SILENT_MODE_UPDATE_TYPE</span>;
-}
-</code></pre>
 <footer class="page-footer"><span class="copyright">Copyright &#xA9; 2015-2020&#x5E74; IDO. All rights reserved. all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2020-05-11 16:38:28
+2020-05-19 16:15:23
 </span></footer>
                                 
                                 </section>
@@ -867,12 +919,12 @@
 
             
                 
-                <a href="IDOBluetooth.html" class="navigation navigation-prev " aria-label="Previous page: 蓝牙管理库">
+                <a href="IDODeviceBinding.html" class="navigation navigation-prev " aria-label="Previous page: 设备绑定解绑">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="IDODeviceBinding.html" class="navigation navigation-next " aria-label="Next page: 设备绑定解绑">
+                <a href="IDOSetUpFunction.html" class="navigation navigation-next " aria-label="Next page: 设置命令功能">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -883,7 +935,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"升级管理库","level":"1.3","depth":1,"next":{"title":"设备绑定解绑","level":"1.4","depth":1,"path":"IDODeviceBinding.md","ref":"IDODeviceBinding.md","articles":[]},"previous":{"title":"蓝牙管理库","level":"1.2","depth":1,"path":"IDOBluetooth.md","ref":"IDOBluetooth.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","back-to-top-button","code","github","tbfed-pagefooter","copy-code-button","pageview-count","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © 2015-2020年 IDO. All rights reserved.","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://github.com/idoosmart"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"hedongyang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"IDO智能手环SDK","language":"zh-hans","gitbook":"*","description":"IDO智能手环SDK"},"file":{"path":"IDOBlueUpdate.md","mtime":"2020-05-11T08:38:28.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-22T09:03:55.647Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"错误码说明","level":"1.5","depth":1,"next":{"title":"设置命令功能","level":"1.6","depth":1,"path":"IDOSetUpFunction.md","ref":"IDOSetUpFunction.md","articles":[{"title":"设置时间命令","level":"1.6.1","depth":2,"path":"set/IDOSetTimeFunction.md","ref":"set/IDOSetTimeFunction.md","articles":[]},{"title":"设置闹钟命令","level":"1.6.2","depth":2,"path":"set/IDOSetAlarmFunction.md","ref":"set/IDOSetAlarmFunction.md","articles":[]},{"title":"设置用户信息","level":"1.6.3","depth":2,"path":"set/IDOSetUserInfoFunction.md","ref":"set/IDOSetUserInfoFunction.md","articles":[]},{"title":"设置寻找手机","level":"1.6.4","depth":2,"path":"set/IDOSetFindPhoneFunction.md","ref":"set/IDOSetFindPhoneFunction.md","articles":[]},{"title":"设置抬腕命令","level":"1.6.5","depth":2,"path":"set/IDOSetHandUpFunction.md","ref":"set/IDOSetHandUpFunction.md","articles":[]},{"title":"设置左右手穿戴","level":"1.6.6","depth":2,"path":"set/IDOSetLeftRightFundation.md","ref":"set/IDOSetLeftRightFundation.md","articles":[]},{"title":"设置防丢失命令","level":"1.6.7","depth":2,"path":"set/IDOPreventLostFunction.md","ref":"set/IDOPreventLostFunction.md","articles":[]},{"title":"设置显示模式","level":"1.6.8","depth":2,"path":"set/IDOSetDisplayFunction.md","ref":"set/IDOSetDisplayFunction.md","articles":[]},{"title":"设置智能提醒","level":"1.6.9","depth":2,"path":"set/IDOSetNoticeFunction.md","ref":"set/IDOSetNoticeFunction.md","articles":[]},{"title":"设置久坐提醒","level":"1.6.10","depth":2,"path":"set/IDOSetLongSitFunction.md","ref":"set/IDOSetLongSitFunction.md","articles":[]},{"title":"设置天气预报","level":"1.6.11","depth":2,"path":"set/IDOSetWeatherFunction.md","ref":"set/IDOSetWeatherFunction.md","articles":[]},{"title":"设置心率模式","level":"1.6.12","depth":2,"path":"set/IDOSetHrModeFunction.md","ref":"set/IDOSetHrModeFunction.md","articles":[]},{"title":"设置心率区间","level":"1.6.13","depth":2,"path":"set/IDOSetHrIntervalFunction.md","ref":"set/IDOSetHrIntervalFunction.md","articles":[]},{"title":"设置勿扰模式","level":"1.6.14","depth":2,"path":"set/IDOSetNoDisturbFunction.md","ref":"set/IDOSetNoDisturbFunction.md","articles":[]},{"title":"设置单位命令","level":"1.6.15","depth":2,"path":"set/IDOSetUnitFunction.md","ref":"set/IDOSetUnitFunction.md","articles":[]},{"title":"设置一键呼救","level":"1.6.16","depth":2,"path":"set/IDOSetOneKeySosFunction.md","ref":"set/IDOSetOneKeySosFunction.md","articles":[]},{"title":"设置快捷方式","level":"1.6.17","depth":2,"path":"set/IDOSetShortcutFunction.md","ref":"set/IDOSetShortcutFunction.md","articles":[]},{"title":"设置血压校准","level":"1.6.18","depth":2,"path":"set/IDOSetBpFunction.md","ref":"set/IDOSetBpFunction.md","articles":[]},{"title":"设置运动快捷方式","level":"1.6.19","depth":2,"path":"set/IDOSetSportShortcutFunction.md","ref":"set/IDOSetSportShortcutFunction.md","articles":[]},{"title":"设置运动排序","level":"1.6.20","depth":2,"path":"set/IDOSetSportSortFunction.md","ref":"set/IDOSetSportSortFunction.md","articles":[]},{"title":"设置屏幕亮度","level":"1.6.21","depth":2,"path":"set/IDOSetScreenBrightFunction.md","ref":"set/IDOSetScreenBrightFunction.md","articles":[]},{"title":"设置音乐开关","level":"1.6.22","depth":2,"path":"set/IDOSetMusicFunction.md","ref":"set/IDOSetMusicFunction.md","articles":[]},{"title":"设置GPS信息","level":"1.6.23","depth":2,"path":"set/IDOSetGpsInfoFunction.md","ref":"set/IDOSetGpsInfoFunction.md","articles":[]},{"title":"设置表盘ID","level":"1.6.24","depth":2,"path":"set/IDOSetWatchDiaFunction.md","ref":"set/IDOSetWatchDiaFunction.md","articles":[]},{"title":"设置走动提醒","level":"1.6.25","depth":2,"path":"set/IDOSetWalkRemindFunction.md","ref":"set/IDOSetWalkRemindFunction.md","articles":[]},{"title":"设置v3心率模式","level":"1.6.26","depth":2,"path":"set/IDOSetV3HrModeFunction.md","ref":"set/IDOSetV3HrModeFunction.md","articles":[]},{"title":"设置血氧开关","level":"1.6.27","depth":2,"path":"set/IDOSetSpo2Function.md","ref":"set/IDOSetSpo2Function.md","articles":[]},{"title":"设置睡眠开关","level":"1.6.28","depth":2,"path":"set/IDOSetSleepTimeFunction.md","ref":"set/IDOSetSleepTimeFunction.md","articles":[]},{"title":"设置压力开关","level":"1.6.29","depth":2,"path":"set/IDOSetPressureSwitchFunction.md","ref":"set/IDOSetPressureSwitchFunction.md","articles":[]},{"title":"设置菜单列表","level":"1.6.30","depth":2,"path":"set/IDOSetMenuListFunction.md","ref":"set/IDOSetMenuListFunction.md","articles":[]},{"title":"设置生理周期提醒","level":"1.6.31","depth":2,"path":"set/IDOSetMenstruationRemindFunction.md","ref":"set/IDOSetMenstruationRemindFunction.md","articles":[]},{"title":"设置生理周期","level":"1.6.32","depth":2,"path":"set/IDOSetMenstruationFunction.md","ref":"set/IDOSetMenstruationFunction.md","articles":[]},{"title":"设置喝水提醒","level":"1.6.33","depth":2,"path":"set/IDOSetDrinkWaterFunction.md","ref":"set/IDOSetDrinkWaterFunction.md","articles":[]},{"title":"设置呼吸训练","level":"1.6.34","depth":2,"path":"set/IDOSetBreatheFunction.md","ref":"set/IDOSetBreatheFunction.md","articles":[]},{"title":"设置运动开关","level":"1.6.35","depth":2,"path":"set/IDOSetActivitySwitchFunction.md","ref":"set/IDOSetActivitySwitchFunction.md","articles":[]}]},"previous":{"title":"设备绑定解绑","level":"1.4","depth":1,"path":"IDODeviceBinding.md","ref":"IDODeviceBinding.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","back-to-top-button","code","github","tbfed-pagefooter","copy-code-button","pageview-count","livereload"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © 2015-2020年 IDO. All rights reserved.","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"github":{"url":"https://github.com/idoosmart"},"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"code":{"copyButtons":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"hedongyang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"IDO智能手环SDK","language":"zh-hans","gitbook":"*","description":"IDO智能手环SDK"},"file":{"path":"IDOErrorCode.md","mtime":"2020-05-19T08:15:23.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-05-22T09:03:55.647Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
