@@ -1,6 +1,6 @@
 
 <!DOCTYPE HTML>
-<html lang="zh" >
+<html lang="zh-hans" >
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
@@ -93,7 +93,7 @@
         
             
 <div id="book-search-input" role="search">
-    <input type="text" placeholder="輸入並搜尋" />
+    <input type="text" placeholder="输入并搜索" />
 </div>
 
             
@@ -948,7 +948,7 @@
                 <a href="control/IDOVoiceFunction.html">
             
                     
-                    语言控制命令
+                    语音控制命令
             
                 </a>
             
@@ -1182,7 +1182,7 @@
 
     <li>
         <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
-            本書使用 GitBook 釋出
+            本书使用 GitBook 发布
         </a>
     </li>
 </ul>
@@ -1227,6 +1227,112 @@
 <pre><code class="lang-objc">funcTable26Model.multiDial
 </code></pre>
 <h3 id="153&#x8868;&#x76D8;&#x4FE1;&#x606F;&#x83B7;&#x53D6;&#x529F;&#x80FD;">15.3&#x8868;&#x76D8;&#x4FE1;&#x606F;&#x83B7;&#x53D6;&#x529F;&#x80FD;</h3>
+<h4 id="&#x53C2;&#x6570;&#x8BF4;&#x660E;">&#x53C2;&#x6570;&#x8BF4;&#x660E;</h4>
+<ul>
+<li>IDOWatchScreenInfoModel</li>
+</ul>
+<table border="1px" width="100%">
+  <thead>
+    <tr>
+    <th><strong>&#x53C2;&#x6570;</strong></th>
+        <th><strong>&#x8BF4;&#x660E;</strong></th>
+        <th><strong>&#x5907;&#x6CE8;</strong></th>
+    </tr>
+    </thead>
+  <tbody>
+    <tr>
+      <td>familyName</td>
+      <td>&#x8868;&#x76D8;&#x5BB6;&#x65CF;&#x540D;&#x79F0;</td>
+      <td>str</td>
+    </tr>
+    <tr>
+      <td>width</td>
+      <td>&#x5BBD;&#x5EA6;</td>
+      <td>int</td>
+    </tr>
+    <tr>
+      <td>height</td>
+      <td>&#x9AD8;&#x5EA6;</td>
+      <td>int</td>
+    </tr>
+    <tr>
+      <td>colorFormat</td>
+      <td>&#x989C;&#x8272;&#x683C;&#x5F0F;</td>
+      <td>int</td>
+    </tr>
+    <tr>
+      <td>size</td>
+      <td>&#x5C3A;&#x5BF8; * 100</td>
+      <td>int</td>
+    </tr>
+   </tbody>
+</table>
+
+<ul>
+<li>IDOWatchDialInfoItemModel</li>
+</ul>
+<table border="1px" width="100%">
+  <thead>
+    <tr>
+    <th><strong>&#x53C2;&#x6570;</strong></th>
+        <th><strong>&#x8BF4;&#x660E;</strong></th>
+        <th><strong>&#x5907;&#x6CE8;</strong></th>
+    </tr>
+    </thead>
+  <tbody>
+    <tr>
+      <td>fileName</td>
+      <td>&#x8868;&#x76D8;&#x540D;&#x79F0;</td>
+      <td>str&#xFF08;&#x552F;&#x4E00;&#x6807;&#x793A;&#xFF09;</td>
+    </tr>
+    <tr>
+      <td>operate</td>
+      <td>&#x64CD;&#x4F5C;</td>
+      <td>0x00:&#x67E5;&#x8BE2;&#x6B63;&#x5728;&#x4F7F;&#x7528;&#x8868;&#x76D8; 0x01:&#x8BBE;&#x7F6E;&#x8868;&#x76D8; 0x02:&#x5220;&#x9664;&#x8868;&#x76D8;</td>
+    </tr>
+   </tbody>
+</table>
+
+<ul>
+<li>IDOWatchDialInfoModel</li>
+</ul>
+<table border="1px" width="100%">
+  <thead>
+    <tr>
+    <th><strong>&#x53C2;&#x6570;</strong></th>
+        <th><strong>&#x8BF4;&#x660E;</strong></th>
+        <th><strong>&#x5907;&#x6CE8;</strong></th>
+    </tr>
+    </thead>
+  <tbody>
+    <tr>
+      <td>fileCount</td>
+      <td>&#x6587;&#x4EF6;&#x4E2A;&#x6570;</td>
+      <td>int</td>
+    </tr>
+    <tr>
+      <td>remainingSpace</td>
+      <td>&#x5269;&#x4F59;&#x7A7A;&#x95F4;</td>
+      <td>int</td>
+    </tr>
+    <tr>
+      <td>fileMaxSize</td>
+      <td>&#x5355;&#x4E2A;&#x6587;&#x4EF6;&#x6700;&#x5927;size</td>
+      <td>int</td>
+    </tr>
+    <tr>
+      <td>currentDialName</td>
+      <td>&#x5F53;&#x524D;&#x8BBE;&#x7F6E;&#x7684;&#x8868;&#x76D8;&#x540D;&#x79F0;</td>
+      <td>str</td>
+    </tr>
+    <tr>
+      <td>dialArray</td>
+      <td>&#x5F53;&#x524D;&#x624B;&#x73AF;&#x6240;&#x6709;&#x8868;&#x76D8;&#x4FE1;&#x606F;&#x96C6;&#x5408;</td>
+      <td>array</td>
+    </tr>
+   </tbody>
+</table>
+
 <ul>
 <li>&#x83B7;&#x53D6;&#x5F53;&#x524D;&#x8BBE;&#x5907;&#x5C4F;&#x5E55;&#x4FE1;&#x606F;</li>
 </ul>
@@ -1357,8 +1463,11 @@
 }.filePath = filePath;
 <span class="hljs-type">IDOWatchDialManager</span>.startDialTransfer();
 </code></pre>
-<footer class="page-footer"><span class="copyright">Copyright &#xA9; 2015-2020&#x5E74; IDO. All rights reserved. all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x8BE5;&#x6587;&#x4EF6;&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;&#xFF1A;
-2020-06-05 15:31:09
+<h3 id="156-demo&#x8868;&#x76D8;&#x529F;&#x80FD;&#x5165;&#x53E3;">15.6 Demo&#x8868;&#x76D8;&#x529F;&#x80FD;&#x5165;&#x53E3;</h3>
+<p><img src="images/Dial.png" width="40%" height="50%" style="margin-right: 10px">
+<img src="images/Dial_02.png" width="40%" height="50%" style="margin-left: 10px"></p>
+<footer class="page-footer"><span class="copyright">Copyright &#xA9; 2015-2020 IDO. All rights reserved. all right reserved&#xFF0C;powered by Gitbook</span><span class="footer-modification">&#x4FEE;&#x8BA2;&#x65F6;&#x95F4;:
+2020-06-11 19:33:38
 </span></footer>
 <script>console.log("plugin-popup....");document.onclick = function(e){ e.target.tagName === "IMG" && window.open(e.target.src,e.target.src)}</script><style>img{cursor:pointer}</style>
                                 
@@ -1399,7 +1508,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"表盘设置功能","level":"1.15","depth":1,"previous":{"title":"GPS数据查询","level":"1.14.8","depth":2,"path":"query/IDOQueryGpsFunction.md","ref":"query/IDOQueryGpsFunction.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","back-to-top-button","code","github","tbfed-pagefooter","copy-code-button","pageview-count","-lunr","-search","search-pro","language-picker","popup"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © 2015-2020年 IDO. All rights reserved.","modify_label":"该文件修订时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/idoosmart"},"livereload":{},"search-pro":{},"popup":{},"code":{"copyButtons":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"hedongyang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"IDO智能手环SDK","language":"zh","gitbook":"*","description":"IDO智能手环SDK"},"file":{"path":"IDOWatchDialFunction.md","mtime":"2020-06-05T07:31:09.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-05T07:46:12.151Z"},"basePath":".","book":{"language":"zh"}});
+            gitbook.page.hasChanged({"page":{"title":"表盘设置功能","level":"1.15","depth":1,"previous":{"title":"GPS数据查询","level":"1.14.8","depth":2,"path":"query/IDOQueryGpsFunction.md","ref":"query/IDOQueryGpsFunction.md","articles":[]},"dir":"ltr"},"config":{"plugins":["chapter-fold","back-to-top-button","code","github","tbfed-pagefooter","copy-code-button","pageview-count","-lunr","-search","search-pro","language-picker","popup"],"root":".","styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"tbfed-pagefooter":{"copyright":"Copyright © 2015-2020 IDO. All rights reserved.","modify_label":"修订时间:","modify_format":"YYYY-MM-DD HH:mm:ss"},"chapter-fold":{},"language-picker":{"grid-columns":3},"github":{"url":"https://github.com/idoosmart/"},"search-pro":{},"popup":{},"code":{"copyButtons":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"back-to-top-button":{},"pageview-count":{},"copy-code-button":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"hedongyang","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"IDO智能手环SDK","language":"zh-hans","gitbook":"*","description":"IDO智能手环SDK"},"file":{"path":"IDOWatchDialFunction.md","mtime":"2020-06-11T11:33:38.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-06-12T01:31:28.363Z"},"basePath":".","book":{"language":"zh"}});
         });
     </script>
 </div>
@@ -1442,10 +1551,6 @@
     
         
         <script src="../gitbook/gitbook-plugin-language-picker/plugin.js"></script>
-        
-    
-        
-        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
         
     
         
