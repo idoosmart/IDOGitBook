@@ -1,5 +1,8 @@
 # Set a sedentary reminder
-
+### Function table
+```objc
+__IDO_FUNCTABLE__.funcTable11Model.sedentariness
+```
 ### Sedentary Model Instructions
 
 * IDOSetLongSitInfoBuletoothModel

@@ -1,5 +1,8 @@
 # Set up a menstrual cycle
-
+### Function table
+```objc
+__IDO_FUNCTABLE__.funcTable20Model.menstruation
+```
 ### Description of the physiological cycle model
 
 * IDOSetMenstruationInfoBluetoothModel

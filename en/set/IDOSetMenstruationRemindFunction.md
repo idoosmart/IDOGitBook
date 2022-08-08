@@ -1,5 +1,8 @@
 # Set up menstrual cycle reminders
-
+### Function table
+```objc
+__IDO_FUNCTABLE__.funcTable20Model.menstruation
+```
 ### Menstrual cycle reminder model description
 
 * IDOSetMenstruationRemindBluetoothModel
