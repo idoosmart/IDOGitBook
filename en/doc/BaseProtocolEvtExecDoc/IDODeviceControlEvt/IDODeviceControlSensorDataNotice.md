@@ -1,2 +1,0 @@
-### ~~Device notifies sensor data~~
-
